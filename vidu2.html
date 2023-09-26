@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            /* width: 1200px; */
+            height: 100px;
+            background-color: aqua;
+        }
+        .section{
+            height: 200px;
+            width: 100vw;
+            /* width: 100%; */
+            background-color: blanchedalmond;
+        }
+        .aside{ width: 100vw;
+            /* width: 100%; */
+            background-color: tomato;
+            height: 200px;
+            
+            
+        }
+        .block{
+            display: flex;
+            flex-wrap: nowrap;
+            
+        }
+        .footer{
+            /* width: 1200px; */
+            height: 100px;
+            background-color: black;
+        }
+        @media screen and ( max-width: 768px) {
+            
+            .block{ flex-direction: column;}
+            .aside{
+                order: 2;
+                height: 100px;
+            }
+            
+            
+            .section{
+                order: 3;
+                height: 400px;
+            }
+        }
+            
+        
+
+        
+        
+       
+    </style>
+</head>
+<body>
+    <!-- 
+        đối với ảnh khi dùng width 100vw khác so với dùng 
+        max-width 100vw
+     -->
+</body>
+       <header class="header"> <p>Header</p></header>
+       <div class=" block">
+       <section class="section"> <p>section</p></section>
+       <aside class="aside"> <p>aside</p></aside>
+       </div>
+       <footer class="footer"> <p>footer</p></footer>
+</html>

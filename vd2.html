@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+            box-sizing: border-box;
+        }
+        h1{width: 100vw;
+            height: 100px;
+            text-align: center;
+        }
+        .section{
+            font-size: 20px;
+            width: 100vw;
+            height: 100px;
+            display:flex;
+            flex-direction: column;
+            /* display: inline-block; */
+        }
+        .article{
+            /* display: inline-block; */
+            width: 100vw;
+            height: 100px;
+        }
+        .main{
+            display: flex;
+        }
+        .article__input{
+            width: 200px;
+            height: 30px;
+            /* margin: 10px; */
+            /* margin-left: 0; */
+            margin-right: 20px;
+        }
+        .article__input2{
+            width: 430px;
+            height: 30px;
+            margin-top: 20px;
+            flex-wrap: nowrap;
+        }
+        .button{
+            width: 100px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            position: relative;
+            left: 60vw;
+            top: 50px;
+
+        }
+        span{
+            margin-left: 20px;
+        }
+        @media screen and (max-width: 687px) {
+            .main{
+                flex-direction: column;
+            }
+            .button{
+                left: 50vw;
+            
+            }
+            .article__input{
+                width: 100vw;
+                margin-top: 10px;
+            }
+            .article__input2{
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact</h1>
+    </header>
+    <main class="main">
+    <section class="section">
+        <p><img width="20" src="../Media/pin_gps_location_find_map_search_icon-icons.com_59982.png" alt=""> <span>Chicago,US</span></p>
+       <p> <img src="../Media/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" width="20" alt=""><span>Phone:xxxxxxx</span></p>
+       <p> <img src="../Media/mail_email_message_electronic_online_web_icon-icons.com_59986.png" width="20" alt=""><span>Mail:xxxx</span></p>
+    </section>
+    <article class="article">
+        <input class="article__input" type="text">
+        <input class="article__input" type="email">
+        <br>
+        <input class="article__input2" type="text">
+    </article>
+    </main>
+    <button class="button">Send</button>
+</body>
+</html>
